@@ -9,6 +9,11 @@ public class ErroTest {
   public void testVerificaDados() {
     Erro erro = new Erro(TipoErro.INTERNO, "mensagem");
     assertEquals(TipoErro.INTERNO.getCodigo(), erro.getCodigo());
+  }
+
+  public void testVerificaMensagemDeErro() {
+    Erro erro = new Erro(TipoErro.INTERNO, "mensagem");
     assertEquals("mensagem", erro.getMensagem());
   }
+
 }
